@@ -35,7 +35,7 @@ let rng = Math.floor(Math.random() * 3) + 1;
     }
     if (rng == 3){   //scissors
         computerChoice = gameLogic.scissors;
-        computerSpan.innerHTML = ("scissors!")
+        computerSpan.innerHTML = ("SCISSORS!")
     }
 };
 
