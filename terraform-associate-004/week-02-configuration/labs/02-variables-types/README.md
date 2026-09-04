@@ -3,10 +3,12 @@
 **Objectives:** 4c, 4d  
 **Time:** 25 min
 
+`terraform.tfvars` supplies valid defaults. Override to see validation fail.
+
 ```bash
 cd week-02-configuration/labs/02-variables-types
 terraform init
-terraform apply -var='env=dev' -var='labels={team="platform",app="004"}'
+terraform apply
 terraform apply -var='env=nope'
 # expect variable validation error
 ```

@@ -1,7 +1,6 @@
-# Uncomment after `state rm` if you want to re-import via config.
-# Path must match the real file, same as the CLI import ID.
+# After `state rm`, uncomment and set id = the output from the first apply.
 #
 # import {
-#   to = local_file.existing
-#   id = "${path.module}/imported.txt"
+#   to = random_id.existing
+#   id = "PASTE_BASE64_ID"
 # }

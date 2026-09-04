@@ -3,39 +3,30 @@
 **Objectives:** 7a, 7b  
 **Time:** 30 min
 
+`local_file` cannot be imported. This lab uses `random_id`, which can.
+
 ```bash
 cd week-03-modules-state/labs/04-import-state
-echo "I existed first" > imported.txt
 terraform init
-```
-
-Do **not** apply yet. The file already exists. Import it.
-
-```bash
-terraform import local_file.existing "${PWD}/imported.txt"
+terraform apply
+terraform output import_id
 terraform state list
-terraform state show local_file.existing
-terraform plan
+terraform state show random_id.existing
 ```
 
-Plan should be a no-op (or only whitespace/permission noise). If it wants to replace, the `filename` in config does not match the import ID. Fix the path.
-
-Inspect:
+Untrack, then import the same object back:
 
 ```bash
+ID=$(terraform output -raw import_id)
+terraform state rm random_id.existing
+terraform state list   # empty
+terraform import random_id.existing "$ID"
 terraform state list
-terraform state show local_file.existing
+terraform plan         # no-op
 ```
 
-Then:
+`state rm` dropped tracking only. The id value is unchanged because you imported the same ID.
 
-```bash
-terraform state rm local_file.existing
-ls imported.txt
-```
+Then try the `import` block in `import.tf`: `state rm` again, uncomment the block, paste `id`, `terraform plan` (import action), `terraform apply`.
 
-The file remains. `state rm` only untracks.
-
-Re-import using the `import` block already in `import.tf` (uncomment if you commented it). `terraform plan` shows an import action.
-
-**Exam takeaway:** import binds an ID to an address. Config must exist. `state rm` ≠ destroy. `state mv` / `moved` rename addresses.
+**Exam takeaway:** import binds a real ID to an address. Config must exist. `state rm` ≠ destroy. `state mv` / `moved` rename addresses. Not every resource type implements import.
