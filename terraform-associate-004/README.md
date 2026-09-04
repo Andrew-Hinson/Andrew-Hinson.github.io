@@ -29,7 +29,9 @@ Official study only:
 
 1. [Learning path 004](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
 2. [Exam content list 004](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004)
-3. Sample questions (linked from the content list)
+3. [Sample questions 004](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-questions-004)
+
+Per-week official tutorial list: [OFFICIAL.md](OFFICIAL.md).
 
 ## 004 deltas vs 003
 
@@ -59,7 +61,7 @@ All flashcards: [FLASHCARDS.md](FLASHCARDS.md).
 2. Run every lab. Type the commands. Do not only read the `.tf`.
 3. Take the quiz closed-book. Score by objective.
 4. Misses go back to the content list, not a random video.
-5. Week 4: two timed mocks, then book the exam.
+5. Week 4: official samples, then three timed mocks. Book when mocks feel boring.
 
 ## What not to study
 

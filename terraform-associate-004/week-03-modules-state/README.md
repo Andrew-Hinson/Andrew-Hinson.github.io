@@ -7,7 +7,7 @@
 
 | Block | Hours | Do |
 | --- | --- | --- |
-| 1 | 2.5 | Notes: modules. Lab 01 |
+| 1 | 2.5 | Official tutorials: [OFFICIAL.md](../OFFICIAL.md) week 3. Notes: modules. Lab 01 |
 | 2 | 3 | Notes: backends, locking, drift. Labs 02–03 |
 | 3 | 2.5 | Notes: import, state CLI, logging. Labs 04–05 |
 | 4 | 2 | [quiz.md](quiz.md) + flashcards |

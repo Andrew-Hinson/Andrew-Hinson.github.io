@@ -147,6 +147,8 @@ import {
 
 Import does **not** change the real object. It only updates state.
 
+Not every resource type implements import. If import is unsupported, the provider errors. The exam still expects you to know the workflow: config first, then bind the ID.
+
 ### 7b State CLI
 
 | Command | Effect |

@@ -8,7 +8,7 @@
 
 | Block | Hours | Do |
 | --- | --- | --- |
-| 1 | 2 | Read [notes.md](notes.md). Skim official path for objectives 1–3. |
+| 1 | 2 | Read [notes.md](notes.md). Official tutorials: [OFFICIAL.md](../OFFICIAL.md) week 1 (objectives 1–3). |
 | 2 | 2.5 | Labs 01 and 02 |
 | 3 | 2.5 | Labs 03 and 04 |
 | 4 | 2 | [quiz.md](quiz.md) closed-book. Restudy misses. Flashcards in `../FLASHCARDS.md` (week 1). |

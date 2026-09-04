@@ -7,7 +7,7 @@
 
 | Block | Hours | Do |
 | --- | --- | --- |
-| 1 | 3 | Notes: resource/data, refs, vars, types. Labs 01–02 |
+| 1 | 3 | Official tutorials: [OFFICIAL.md](../OFFICIAL.md) week 2. Notes: resource/data, refs, vars, types. Labs 01–02 |
 | 2 | 3 | Notes: expressions, `count` / `for_each`. Lab 03 |
 | 3 | 3 | Notes: `depends_on`, lifecycle, conditions. Labs 04–05 |
 | 4 | 2–3 | Notes: sensitive / Vault / ephemeral / write-only. Lab 06. [quiz.md](quiz.md) |
